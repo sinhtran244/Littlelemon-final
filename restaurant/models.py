@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 
-class Menu(models.Model):
+class MenuItem(models.Model):
     Title = models.CharField(max_length =255)
-    Price = models.DecimalField() 
+    Price = models.DecimalField(max_digits=6,decimal_places =2) 
     Inventory = models.IntegerField()
 
 class Booking(models.Model):
